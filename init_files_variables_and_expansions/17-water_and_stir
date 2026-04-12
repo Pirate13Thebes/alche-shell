@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "13o 5i $(echo $WATER | tr "watme" "01234") $(echo $STIR | tr "ti.ir" "01234") + p" | dc | tr "0123456789ABC" "bestchol"
+echo $(printf '%o\n' $(( 5#$(printf '%s' $WATER | tr 'water' '01234') + 5#$(printf '%s' $STIR | tr 'stir.' '01234') )) | tr '01234567' 'bestchol')
