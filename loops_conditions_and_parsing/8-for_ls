@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-for file in *; do echo "$file" | cut -d"-" -f2-; done
+for f in [^.]*; do echo "${f#*-}"; done
